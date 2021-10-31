@@ -9,7 +9,7 @@ echo
 echo "INSTALLING XORG"
 echo
 
-PKGS=(
+XPKGS=(
         'xorg-server'           # XOrg server
         'xorg-apps'             # XOrg apps group
         'xorg-xinit'            # XOrg init
@@ -18,9 +18,9 @@ PKGS=(
         'xf86-input-libinput'   # Trackpad driver for Dell XPS
 )
 
-for PKG in "${PKGS[@]}"; do
-    echo "INSTALLING: ${PKG}"
-    sudo pacman -S "$PKG" --noconfirm --needed
+for XPKG in "${XPKGS[@]}"; do
+    echo "INSTALLING: ${XPKG}"
+    sudo pacman -S "$XPKG" --noconfirm --needed
 done
 
 echo
@@ -32,7 +32,7 @@ echo
 echo "INSTALLING DESKTOP"
 echo
 
-sudo pacman -S lightdm xorg-server lightdm-gtk-greeter deepin
+sudo pacman -S lightdm xorg-server lightdm-gtk-greeter plasma kde-system-meta kde-accessibility-meta kde-games-meta
 sudo systemctl enable lightdm
 
 echo 
@@ -50,6 +50,7 @@ echo
 PKGS=(
     'bash-completion'       # Tab completion for Bash
     'bc'                    # Precision calculator language
+    'dolphin'                    # Precision calculator language
     'bleachbit'             # File deletion utility
     'curl'                  # Remote content retrieval
     'elinks'                # Terminal based web browser
@@ -82,7 +83,6 @@ PKGS=(
     'parted'                # Disk utility
     'catfish'               # Filesystem search
     'conky'                 # System information viewer
-    'pcmanfm'               # Filesystem browser
     'xfburn'                # CD burning application
     'atom'                  # Text editor
     'codeblocks'            # Text editor
