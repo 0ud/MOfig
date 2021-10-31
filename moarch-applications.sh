@@ -95,8 +95,6 @@ PKGS=(
     'youtube-dl'            # for downloading yt videos
     'jre-openjdk'           # java runtime
     'jdk-openjdk'           # java dev environment
-    'gnome-software'        # appstore
-    'gnome-software-packagekit-plugin' # gnome software plugin
     'steam'                 # for games
     'qbittorrent'           # for torrenting
     'vim'                   # Text editor
