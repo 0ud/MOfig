@@ -28,24 +28,11 @@ echo "Done!"
 echo
 
 
-DESKTOP=(
-  'lightdm'                # DM
-  'lightdm-gtk-greeter'    # DM greeter
-  'plasma'                 # KDE DE
-  'kde-system-meta'        # KDE system apps
-  'kde-accessibility-meta' # KDE accessability apps
-  'kde-games-meta'         # KDE games
-)
-
-
 echo
 echo "INSTALLING DESKTOP"
 echo
 
-for APP in "${DESKTOP[@]}"; do
-    echo "INSTALLING: ${APP}"
-    sudo pacman -S --asdeps --noconfirm --needed $(pacman -Si $APP | sed -n '/^Opt/,/^Conf/p' | sed '$d' | sed 's/^Opt.*://g' | sed 's/^\s*//g' | tr '\n' ' ')
-done
+sudo pacman -S lightdm xorg-server lightdm-gtk-greeter plasma kde-system-meta kde-accessibility-meta kde-games-meta
 sudo systemctl enable lightdm
 
 echo 
@@ -160,7 +147,7 @@ PKGS=(
 
 for PKG in "${PKGS[@]}"; do
     echo "INSTALLING: ${PKG}"
-    sudo pacman -S --asdeps --noconfirm --needed $(pacman -Si $PKG | sed -n '/^Opt/,/^Conf/p' | sed '$d' | sed 's/^Opt.*://g' | sed 's/^\s*//g' | tr '\n' ' ')
+    sudo pacman -S "$PKG" --noconfirm --needed
 done
 
 echo
