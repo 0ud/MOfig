@@ -127,6 +127,7 @@ AURPKGS=(
   'adapta-gtk-theme-git'  # Another GTK theme
   'numix-icon-theme-git'  # Another icon theme
   'intellij-idea-ce'      # A great JAVA IDE
+  'tlauncher-bin'         # Minecraft
 )
 
 
