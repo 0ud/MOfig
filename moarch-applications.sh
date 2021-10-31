@@ -6,6 +6,19 @@
 # |_|  |_|\___/|_|  |_|_____|_| \_| |____/   \___/|____/
 
 echo
+echo "INSTALLING DESKTOP"
+echo
+
+sudo pacman -S lightdm xorg-server lightdm-gtk-greeter deepin
+
+
+
+
+
+
+
+
+echo
 echo "INSTALLING SOFTWARE"
 echo
 
