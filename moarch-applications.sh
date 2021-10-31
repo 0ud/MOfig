@@ -32,7 +32,7 @@ echo
 echo "INSTALLING DESKTOP"
 echo
 
-sudo pacman -S lightdm xorg-server lightdm-gtk-greeter plasma kde-system-meta kde-accessibility-meta kde-games-meta
+sudo pacman -S lightdm lightdm-gtk-greeter plasma kde-system-meta kde-accessibility-meta kde-games-meta
 sudo systemctl enable lightdm
 
 echo 
