@@ -104,6 +104,7 @@ PKGS=(
     'virtualbox'            # For virtual machines
     'virtualbox-host-modules-arch' # Virtualbox modules
     'base-devel'            # For compiling and building apps
+    'obs-studio'            # A screen recorder and broadcasting software
 )
 
 for PKG in "${PKGS[@]}"; do
