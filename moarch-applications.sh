@@ -10,6 +10,7 @@ echo "INSTALLING DESKTOP"
 echo
 
 sudo pacman -S lightdm xorg-server lightdm-gtk-greeter deepin
+sudo systemctl enable lightdm
 
 echo 
 echo "Done!"
