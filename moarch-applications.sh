@@ -32,7 +32,7 @@ echo
 echo "INSTALLING DESKTOP"
 echo
 
-sudo pacman -S lightdm lightdm-gtk-greeter plasma kde-system-meta kde-accessibility-meta kde-games-meta
+sudo pacman -S lightdm lightdm-gtk-greeter plasma kde-system-meta kde-accessibility-meta kde-games-meta --noconfirm --needed
 sudo systemctl enable lightdm
 
 echo 
@@ -187,5 +187,5 @@ echo
 
 for AURPKG in "${AURPKGS[@]}"; do
   echo "INSTALLING: ${AURPKG}"
-  paru -S "${AURPKG}"
+  paru -S "${AURPKG}" --noconfirm
 done
