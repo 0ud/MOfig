@@ -11,8 +11,9 @@ echo
 
 sudo pacman -S lightdm xorg-server lightdm-gtk-greeter deepin
 
-
-
+echo 
+echo "Done!"
+echo
 
 
 
