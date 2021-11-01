@@ -6,44 +6,6 @@
 # |_|  |_|\___/|_|  |_|_____|_| \_| |____/   \___/|____/
 
 echo
-echo "INSTALLING XORG"
-echo
-
-XPKGS=(
-        'xorg-server'           # XOrg server
-        'xorg-apps'             # XOrg apps group
-        'xorg-xinit'            # XOrg init
-        'xf86-video-intel'      # 2D/3D video driver
-        'mesa'                  # Open source version of OpenGL
-        'xf86-input-libinput'   # Trackpad driver for Dell XPS
-)
-
-for XPKG in "${XPKGS[@]}"; do
-    echo "INSTALLING: ${XPKG}"
-    sudo pacman -S "$XPKG" --noconfirm --needed
-done
-
-echo
-echo "Done!"
-echo
-
-
-echo
-echo "INSTALLING DESKTOP"
-echo
-
-sudo pacman -S lightdm lightdm-gtk-greeter plasma kde-system-meta kde-accessibility-meta kde-games-meta --noconfirm --needed
-sudo systemctl enable lightdm
-
-echo 
-echo "Done!"
-echo
-
-
-
-
-
-echo
 echo "INSTALLING SOFTWARE"
 echo
 
@@ -151,39 +113,3 @@ done
 echo
 echo "Done!"
 echo
-
-
-AURPKGS=(
-  'dracula-gtk-theme'     # A wonderful GTK theme
-  'joplin-beta'           # A note taking app
-  'vscodium-bin'          # Text editor
-  'brave-bin'             # Web browser
-  'etcher-bin'            # Flash ISO to USB and SD
-  'heroic-games-launcher-bin' # A game launcher alternative to EG launcher
-  'paper-icon-theme'      # A good icon theme
-  'adapta-gtk-theme-git'  # Another GTK theme
-  'numix-icon-theme-git'  # Another icon theme
-  'intellij-idea-ce'      # A great JAVA IDE
-  'tlauncher-bin'         # Minecraft
-)
-
-
-echo
-echo "INSTALLING AUR"
-echo
-git clone https://aur.archlinux.org/paru.git ~/ && cd paru
-makepkg -si
-paru
-
-echo
-echo "Done!"
-echo
-
-
-echo "INSTALLING AUR PACKAGES"
-echo
-
-for AURPKG in "${AURPKGS[@]}"; do
-  echo "INSTALLING: ${AURPKG}"
-  paru -S "${AURPKG}" --noconfirm
-done
