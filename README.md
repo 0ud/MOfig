@@ -25,5 +25,5 @@ You can fork the project, edit on it, and report any issue that happens in it.
 sometimes after installing the desktop, system boots up to a normal Terminal interface, to fix this just run:
 
 ```bash
-sudo systemctl enable lightdm
+sudo systemctl enable sddm
 ```

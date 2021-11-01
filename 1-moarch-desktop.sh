@@ -33,8 +33,9 @@ echo
 echo "INSTALLING DESKTOP"
 echo
 
-sudo pacman -S lightdm lightdm-gtk-greeter plasma kde-system-meta kde-accessibility-meta kde-games-meta --noconfirm --needed
-sudo systemctl enable lightdm
+sudo pacman -S sddm plasma kde-system-meta kde-accessibility-meta kde-games-meta --noconfirm --needed
+
+sudo systemctl enable sddm
 
 echo 
 echo "Done!"
