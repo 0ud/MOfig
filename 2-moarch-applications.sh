@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# |  \/  |/ _ \|  \/  | ____| \ | ( ) ___|   / _ \/ ___|
-# | |\/| | | | | |\/| |  _| |  \| |/\___ \  | | | \___ \
-# | |  | | |_| | |  | | |___| |\  |  ___) | | |_| |___) |
-# |_|  |_|\___/|_|  |_|_____|_| \_| |____/   \___/|____/
+# |  \/  |/ _ \( ) ___|   / _ \/ ___|
+# | |\/| | | | |/\___ \  | | | \___ \
+# | |  | | |_| |  ___) | | |_| |___) |
+# |_|  |_|\___/  |____/   \___/|____/
 
 echo
 echo "INSTALLING SOFTWARE"
@@ -103,6 +103,9 @@ PKGS=(
     'virtualbox-host-modules-arch' # Virtualbox modules
     'base-devel'            # For compiling and building apps
     'obs-studio'            # A screen recorder and broadcasting software
+    'kdenlive'              # A great video editing software, competes with Adobe Premiere
+    'openshot'              # Another video editor known for it's simplicity
+    'lutris'                # For emulating windows games on linux
 )
 
 for PKG in "${PKGS[@]}"; do
