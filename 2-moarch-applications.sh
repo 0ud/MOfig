@@ -106,6 +106,7 @@ PKGS=(
     'kdenlive'              # A great video editing software, competes with Adobe Premiere
     'openshot'              # Another video editor known for it's simplicity
     'lutris'                # For emulating windows games on linux
+    'rust'                  # Rust programming language
 )
 
 for PKG in "${PKGS[@]}"; do
