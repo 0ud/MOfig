@@ -41,9 +41,6 @@ note: **DON'T** use sudo when enabling the AUR, just run it as it is
 sh ./4-moarch-aur-apps.sh
 ```
 
-## Contribution
-You can fork the project, edit on it, and report any issue that happens in it.
-
 ## Known issues
 
 sometimes after installing the desktop, system boots up to a normal Terminal interface, to fix this just run:
@@ -51,3 +48,6 @@ sometimes after installing the desktop, system boots up to a normal Terminal int
 ```bash
 sudo systemctl enable sddm
 ```
+
+## Contribution
+You can fork the project, edit on it, and report any issue that happens in it.
