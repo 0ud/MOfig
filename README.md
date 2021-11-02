@@ -17,6 +17,30 @@ The script also installs steam, heroic launcher, lutris, and other libraries and
 
 It also installs OBS-Studio for streamers and installs simple screen recorder for basic screen recording.
 
+## Installation
+You just need to have a minimal arch linux installation (if you install it using ArchInstall you choose minimal/xorg profile), then type the following commands:
+
+1- To install the KDE desktop with the essential xorg server, run:
+```bash
+sh ./1-moarch-desktop.sh
+```
+2- To install the main repository applications, run:
+```bash
+sh ./2-moarch-applications.sh
+```
+note: you can use **sudo** as well when installing the desktop and applications
+
+3- To enable the AUR and install paru AUR helper, run:
+```bash
+sh ./3-moarch-enable-aur.sh
+```
+note: **DON'T** use sudo when enabling the AUR, just run it as it is
+
+4- To install the additional AUR applications, run:
+```bash
+sh ./4-moarch-aur-apps.sh
+```
+
 ## Contribution
 You can fork the project, edit on it, and report any issue that happens in it.
 
