@@ -4,7 +4,7 @@ My ArchLinux desktop config in seprate bash scripts, original script was publish
 **IMPORTANT: WILL REWRITE IN A BETTER WAY AND CROSS-SYSTEM**
 
 ## Info
-Base: Arch Linux (universal edition soon)
+Base: Arch Linux
 
 Desktop: KDE
 
