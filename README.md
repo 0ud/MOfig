@@ -1,6 +1,7 @@
 # MOfig
 My ArchLinux desktop config in seprate bash scripts, original script was published in ArchMatic repository. I basically made my own "version" of it.
 
+**IMPORTANT: WILL REWRITE IN A BETTER WAY AND CROSS-SYSTEM**
 
 ## Info
 Base: Arch Linux (universal edition soon)
