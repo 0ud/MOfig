@@ -10,19 +10,9 @@ echo
 echo "INSTALLING XORG"
 echo
 
-XPKGS=(
-        'xorg-server'           # XOrg server
-        'xorg-apps'             # XOrg apps group
-        'xorg-xinit'            # XOrg init
-        'xf86-video-intel'      # 2D/3D video driver
-        'mesa'                  # Open source version of OpenGL
-        'xf86-input-libinput'   # Trackpad driver for Dell XPS
-)
 
-for XPKG in "${XPKGS[@]}"; do
-    echo "INSTALLING: ${XPKG}"
-    sudo pacman -S "$XPKG" --noconfirm --needed
-done
+sudo pacman -S xorg-server xorg-apps xorg-xinit xf86-video-intel xf86-video-amdgpu mesa --noconfirm --needed
+
 
 echo
 echo "Done!"
