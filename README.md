@@ -9,9 +9,10 @@ Base: Arch Linux
 Desktop: KDE
 
 Themes: Comes with preinstalled gtk and icon themes such as adapta, numix, breeze, etc.
+Also comes with my own themes and customizations that'll be installed by default with the desktop.
 
 ## Software
- The script installs LibreOffice for the office suite, Joplin note-taking app, IDE's for programmers of most programming languages as well as development environments such as JDK, nodeJS, etc. The script also installs software for image and video editing.
+The script installs LibreOffice for the office suite, Joplin note-taking app, IDE's for programmers of most programming languages as well as development environments such as JDK, nodeJS, etc. The script also installs software for image and video editing.
 
 ## Gaming
 The script also installs steam, heroic launcher, lutris, and other libraries and applications for gamers.
@@ -21,25 +22,21 @@ It also installs OBS-Studio for streamers and installs simple screen recorder fo
 ## Installation
 You just need to have a minimal arch linux installation (if you install it using ArchInstall you choose minimal/xorg profile), then type the following commands:
 
+note: **DON'T** use sudo when running the scripts, just run them so they go with no errors!
+
 1- To install the KDE desktop with the essential xorg server, run:
 ```bash
 sh ./1-moarch-desktop.sh
 ```
-2- To install the main repository applications, run:
-```bash
-sh ./2-moarch-applications.sh
-```
-note: you can use **sudo** as well when installing the desktop and applications
 
-3- To enable the AUR and install paru AUR helper, run:
+2- To enable the AUR and install paru AUR helper, run:
 ```bash
-sh ./3-moarch-enable-aur.sh
+sh ./2-moarch-enable-aur.sh
 ```
-note: **DON'T** use sudo when enabling the AUR, just run it as it is
 
-4- To install the additional AUR applications, run:
+3- To install the applications, run:
 ```bash
-sh ./4-moarch-aur-apps.sh
+sh ./3-moarch-applications.sh
 ```
 
 ## Known issues
