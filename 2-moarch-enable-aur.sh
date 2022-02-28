@@ -4,6 +4,18 @@
 # | |\/| | | | |/\___ \  | | | \___ \
 # | |  | | |_| |  ___) | | |_| |___) |
 # |_|  |_|\___/  |____/   \___/|____/
+echo
+echo "INSTALLING NECESSERY PACKAGES"
+echo
+
+pacman -S --needed base-devel 
+
+echo
+echo "DONE"
+echo
+
+
+
 
 echo
 echo "INSTALLING AUR"
