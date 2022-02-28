@@ -8,8 +8,8 @@
 echo
 echo "INSTALLING AUR"
 echo
-git clone https://aur.archlinux.org/paru.git ~/paru
-cd ~/paru
+git clone https://aur.archlinux.org/paru.git /tmp/paru
+cd /tmp/paru
 makepkg -si
 paru
 
