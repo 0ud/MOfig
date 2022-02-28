@@ -33,10 +33,23 @@ echo
 echo "INSTALLING DESKTOP"
 echo
 
-sudo pacman -S sddm plasma kde-system-meta kde-accessibility-meta kde-games-meta --noconfirm --needed
-
+sudo pacman -S python python-pip sddm plasma kde-system-meta kde-accessibility-meta kde-games-meta --noconfirm --needed
 sudo systemctl enable sddm
 
+
 echo 
+echo "Done!"
+echo
+
+
+echo
+echo "INSTALLING AND APPLYING THEMES"
+echo
+
+sudo pip install konsave
+konsave -i mofig.knsv
+konsave -a mofig
+
+echo
 echo "Done!"
 echo
