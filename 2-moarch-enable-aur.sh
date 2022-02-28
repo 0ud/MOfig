@@ -8,7 +8,7 @@ echo
 echo "INSTALLING NECESSERY PACKAGES"
 echo
 
-pacman -S --needed base-devel 
+sudo pacman -S --needed base-devel 
 
 echo
 echo "DONE"
