@@ -42,13 +42,12 @@ audacity
 darktable
 discord
 vlc
-youtube-dl
+yt-dlp
 jre-openjdk
 jdk-openjdk
 steam
 qbittorrent
 vim
-apache
 clang
 cmake
 electron
@@ -74,7 +73,6 @@ irssi
 lollypop
 simplescreenrecorder
 vlc
-xfce4-screenshooter
 gcolor2
 gimp
 inkscape
@@ -97,7 +95,6 @@ lutris
 rust
 dracula-gtk-theme
 vscodium-bin
-brave-bin
 heroic-games-launcher-bin
 paper-icon-theme
 adapta-gtk-theme-git
