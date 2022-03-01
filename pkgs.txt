@@ -84,7 +84,7 @@ galculator
 hunspell
 hunspell-en
 libreoffice-fresh
-xpdf
+okular
 virtualbox
 virtualbox-host-modules-arch
 base-devel
@@ -100,3 +100,7 @@ paper-icon-theme
 adapta-gtk-theme-git
 numix-icon-theme-git
 tlauncher-bin
+noto-fonts-emoji
+xournalpp
+minder
+kcalc
